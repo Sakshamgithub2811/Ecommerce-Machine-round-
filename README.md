@@ -69,6 +69,97 @@ E-comm/
 ├── .gitignore
 └── README.md
 ```
+## 📂 Backend Structure
+
+```bash
+backend/
+│
+├── config/
+│   └── db.js
+│
+├── controllers/
+│   ├── authController.js
+│   ├── productController.js
+│   └── cartController.js
+│
+├── middleware/
+│   └── authMiddleware.js
+│
+├── models/
+│   ├── User.js
+│   ├── Product.js
+│   └── Cart.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   ├── productRoutes.js
+│   └── cartRoutes.js
+│
+├── .env
+├── server.js
+├── package.json
+└── package-lock.json
+```
+
+### Backend Responsibilities
+
+- Database Connection
+- Authentication & Authorization
+- Product Management
+- Cart Management
+- JWT Verification
+- MongoDB Operations
+
+---
+
+## 📂 Frontend Structure
+
+```bash
+frontend/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── api/
+│   │   └── axiosInstance.js
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── ProductCard.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   └── Cart.jsx
+│   │
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env
+├── package.json
+└── vite.config.js
+```
+
+### Frontend Responsibilities
+
+- User Authentication UI
+- Product Listing
+- Cart Management UI
+- Protected Routes
+- API Integration using Axios
+- Responsive Design
 
 ---
 
